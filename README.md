@@ -27,3 +27,5 @@
 NestJS framework + MVC Architecture with html template
 
 ![alt text](img/image.png)
+
+![alt text](img/loginsuccess.png)
