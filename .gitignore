@@ -2,7 +2,7 @@
 /dist
 /node_modules
 /build
-/public/html/
+/public/html
 
 # Logs
 logs

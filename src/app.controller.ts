@@ -14,6 +14,6 @@ export class AppController {
   @Get('hello')
   @Render('dasbor.hbs')
   root() {
-    return { message: 'Hello Nest' };
+    return { message: 'Hello App' };
   }
 }
