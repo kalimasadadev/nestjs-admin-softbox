@@ -5,7 +5,7 @@ import { AppService } from 'src/app.service';
 export class LoginController {
     constructor(private readonly appService: AppService) {}
 
-    @Get('index')
+    @Get('/')
     @Render('login.hbs')
     root() {
         return { message: 'Login App' }
