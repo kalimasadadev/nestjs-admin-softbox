@@ -1,7 +1,6 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { LoginModule } from './login/login.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
@@ -26,8 +25,10 @@ import { User } from './users/users.entity';
       entities: [User],
       synchronize: true,
       autoLoadEntities: true,
-    }),
-    LoginModule, UsersModule, AuthModule],
+    }), 
+    UsersModule, 
+    AuthModule
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

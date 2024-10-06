@@ -13,10 +13,10 @@ export class AppController {
 
   @Get('/')
   redirect(@Res() res) {
-    return res.redirect('/login')
+    return res.redirect('/auth/login')
   }
 
-  @Get('hello')
+  @Get('dasbor')
   @Render('dasbor.hbs')
   root() {
     return { message: 'Hello App' };
